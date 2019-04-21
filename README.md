@@ -31,7 +31,7 @@ In order to run the tests, in the root folder, execute any of the following comm
 npm test
 npm test -- --coverage
 
-> Besides, there are some issues that I am aware of, and enhancments to suggest, If you like we can discuss more anytime.
+> Besides the many enhancments I would suggest, there are some issues I am aware of, just ifnored them to keep inline with the requirments. Feel free please to contact me any time for more details.
 
 More details are available on the link: 
 https://github.com/yaziderman/newser.3/blob/master/Documentation/Use%20Case%20Details.docx
