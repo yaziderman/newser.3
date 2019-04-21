@@ -8,6 +8,7 @@ The application can be quickly and easily setup locally in two ways:
 Using Docker Image:
 
 Linux:  docker run -p 8000:80 -it yaziderman/newser-pwa-5
+
 Windows: winpty docker run -p 8000:80 -it yaziderman/newser-pwa-5
 
 As per what is mentioned in the previous command, after executing it, open the following link on your browser: http://localhost:8000, or from any mobile connected to the same network: http://<your PC IP>:8000.
