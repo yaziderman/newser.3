@@ -1,0 +1,267 @@
+.topheader {
+  background-color: #174c80;
+}
+.navbar {
+  background-color: #174c80;
+}
+.navbar-item {
+  color: #fff;
+}
+.results--section {
+  padding: 20px 0px;
+  margin-top: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+time{
+  font-size: 12px;
+}
+
+:root {
+  --card-padding: 24px;
+  --card-height: 340px;
+  --card-skeleton: linear-gradient(lightgrey var(--card-height), transparent 0);
+  --avatar-size: 32px;
+  --avatar-position: var(--card-padding) var(--card-padding);
+  --avatar-skeleton: radial-gradient(circle 16px at center, white 99%, transparent 0
+  );
+  --title-height: 32px;
+  --title-width: 200px;
+  --title-position: var(--card-padding) 180px;
+  --title-skeleton: linear-gradient(white var(--title-height), transparent 0);
+  --desc-line-height: 16px;
+  --desc-line-skeleton: linear-gradient(white var(--desc-line-height), transparent 0);
+  --desc-line-1-width:230px;
+  --desc-line-1-position: var(--card-padding) 242px;
+  --desc-line-2-width:180px;
+  --desc-line-2-position: var(--card-padding) 265px;
+  --footer-height: 40px;
+  --footer-position: 0 calc(var(--card-height) - var(--footer-height));
+  --footer-skeleton: linear-gradient(white var(--footer-height), transparent 0);
+  --blur-width: 200px;
+  --blur-size: var(--blur-width) calc(var(--card-height) - var(--footer-height));
+}
+
+.skeleton {
+  background-repeat: no-repeat;
+  background-image: 
+    radial-gradient(circle 16px, white 99%, transparent 0),
+    linear-gradient(white 100px, transparent 0),
+    linear-gradient(white 40px, transparent 0),
+   linear-gradient(#dbd7d759 100%, transparent 0);
+
+    /*linear-gradient(red, yellow, blue);
+*/
+  background-size:
+      32px 32px,  /* avatar */
+      90% 100px, /* body */
+      200px 40px, /* title */
+      100% 100%;  /* card bg */
+
+  background-position:
+      24px 24px,  /* avatar */
+      24px 330px, /* body */
+      24px 270px, /* title */
+      0 0;        /* card bg */
+
+  -webkit-animation: loading 1.5s infinite;
+  animation: loading 1.5s infinite;
+}
+
+
+/* @-webkit-keyframes loading {
+  to {
+    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0;
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0;
+  }
+}
+*/
+.oldskeleton {
+  color:red;
+  /*
+    define as separate properties
+  */
+  --card-height: 340px;
+  --card-padding:24px;
+  --card-skeleton: linear-gradient(gray var(--card-height), transparent 0);
+
+  --title-height: 32px;
+  --title-width: 200px;
+  --title-position: var(--card-padding) 180px;
+  --title-skeleton: linear-gradient(white var(--title-height), transparent 0);
+
+  --avatar-size: 32px;
+  --avatar-position: var(--card-padding) var(--card-padding);
+  --avatar-skeleton: radial-gradient(
+    circle calc(var(--avatar-size) / 2), 
+    white 99%, 
+    transparent 0
+  );
+
+  /* 
+    now we can break the background up 
+    into individual shapes 
+  */
+  background-image: 
+    var(--avatar-skeleton),
+    var(--title-skeleton),
+    var(--card-skeleton);
+
+  background-size:
+    var(--avatar-size),
+    var(--title-width) var(--title-height),
+    100% 100%;
+
+  background-position:
+    var(--avatar-position),
+    var(--title-position),
+    0 0;
+}
+
+
+
+
+
+  .today--section {
+      margin-bottom: 40px;
+      padding: 0 50px;
+  }
+  .today--section h2 {
+      font-size: 20px;
+  }
+  .today--section__box {
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  .btc--section {
+      text-align: center;
+      border-right: 1px solid #DAE1E9;
+  }
+  .btc--section h5 {
+      font-size: 30px;
+  }
+  .eth--section {
+      text-align: center;
+      border-right: 1px solid #DAE1E9;
+  }
+  .eth--section h5 {
+      font-size: 30px;
+  }
+  .ltc--section {
+      text-align: center;
+  }
+  .ltc--section h5 {
+      font-size: 30px;
+  }
+  .navbar {
+    background-color: #003768;
+  }
+
+  .navbar-item>font{
+    line-height: 23px;
+    padding: 10px 0px 0px 3px;
+    font-weight: bold;
+  }
+
+  .p-t-none{
+    padding-top: 0px;
+  }
+
+  .linkTitle{
+    font-size: 12px;
+  }
+
+  .tag.is-link.is-medium{
+    cursor: pointer;
+    background-color: #003768;
+    color: white;
+    font-weight: 500;
+    margin: 0px 2px;
+  }
+
+  .is-full-height{
+    height: 100%;
+  }
+
+  article img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+
+  .tag.is-link.is-medium:hover {
+    font-weight: 700;
+  }
+
+  a.newserAction:hover{
+    font-weight: bolder;
+  }
+
+  .newserAction, .title{
+    color:#003768;
+  }
+
+  .with-shadow-on-hover:hover{
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.27);
+    box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.27);
+  }
+
+  .text-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+  }
+  
+  .text-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 300ms;
+  }
+  
+  .text-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .text-exit-active {
+    opacity: 0.01;
+    transform: scale(1.1);
+    transition: all 300ms;
+  }
+
+
+   @media screen and (max-width: 768px){
+      .column.is-three-quarters-mobile {
+        -ms-flex: auto;
+        flex: auto;
+        margin: 0px auto;
+    }
+  
+  } 
+
+  @media (max-width: 480px) {
+      .eth--section {
+          border-right: none;
+      }
+      .btc--section {
+          border-right: none;
+      }
+      .today--section {
+          margin-top:  50px;
+      }
+  }
