@@ -14,7 +14,7 @@ As per what is mentioned in the previous command, after executing it, open the f
 However, the docker repository url is as following: https://cloud.docker.com/repository/docker/yaziderman/newser-pwa-5
 
 * Manually, Cloning and building the code:
-The script is uploaded on Github, and publicly accessible using the url: https://github.com/yaziderman/newser.3, in order to get it setup on your machine, follow please the steps:
+The script is uploaded on Github, and publicly accessible using the url: https://github.com/yaziderman/newser.3, in order to get it setup on your machine, please follow the steps:
    * Clone the code on your local:
 Optionally cd C:/Users/(Your User)/newser
    * git clone https://github.com/yaziderman/newser.3.git newser
