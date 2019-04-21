@@ -21,12 +21,19 @@ The script is uploaded on Github, and publicly accessible using the url: https:/
 
 * Clone the code on your local:
 Optionally cd C:/Users/(Your User)/newser
-git clone git@github.com:yaziderman/newser.3.git
-cd newser.3/
-git i
-git run build
+
+git clone https://github.com/yaziderman/newser.3.git newser
+
+cd newser/
+
+npm i
+
+npm run build
+
 npm install -g serve <If not already installed>
+  
 serve -s build
+
 
 In this case, the application will be accessible using the link: http://localhost:5000, or from any mobile connected to the same network: http://(your PC IP):5000
 
