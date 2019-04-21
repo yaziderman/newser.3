@@ -1,7 +1,7 @@
 # Newser PWA
 
 
-Newser is a boilerplate ReactJS application. Also qualified to be a Progressive Web Application by adding all the required features.
+Newser is a boilerplate ReactJS application. Also qualified to be a Progressive Web Application since we have added all the required features.
 
 The application can be quickly and easily setup locally in two ways:
 
