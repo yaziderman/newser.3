@@ -3,10 +3,9 @@ import React, { Component, Suspense } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home";
-import ScrollUpButton from "react-scroll-up-button";
 import { ClipLoader } from "react-spinners";
 import { css } from "@emotion/core";
-import { browserHistory } from 'react-router'
+
 const LazyNews = React.lazy(() => import("./Components/News"));
 const logo = require("./logo.png");
 const scrollerStyle = {
@@ -72,7 +71,7 @@ class App extends Component {
         <section className="section">
           <div className="container " />
           <div className="results--section__inner">
-            <Router history={browserHistory}>
+            <Router>
                 <Route path="/" component={Home} exact />
                 <Suspense
                   fallback={
@@ -88,7 +87,7 @@ class App extends Component {
                   <Route path="/:slug" component={LazyNews} />
                 </Suspense>
             </Router>
-            <ScrollUpButton style={scrollerStyle} />
+          {/*}  <ScrollUpButton style={scrollerStyle} /> */}
           </div>
         </section>
       </div>

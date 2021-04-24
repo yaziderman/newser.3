@@ -34,7 +34,7 @@ class Categories extends Component {
                             {
                                 this.state.list.map( (category, index) => 
                                     <span className="tag is-link is-medium" key={index} id={category} onClick={this.selectCategory}>
-                                        {"#"+titleize(category)}
+                                        {/*"#"+titleize(category) */}
                                         {/* <Wave 
                                             delay="3.0"
                                             paused={this.state.animationPaused} 

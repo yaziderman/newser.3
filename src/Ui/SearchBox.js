@@ -1,6 +1,6 @@
 import React from 'react';
-import {TextField, IconButton} from 'material-ui'
-import SearchIcon from 'material-ui/svg-icons/action/search';
+import {TextField, IconButton} from '@material-ui/core'
+
 
 const SearchBox = ({isOpen, onClick, additionalStyles, handleOnSearch}) => {
     const baseStyles = {
@@ -35,7 +35,7 @@ const SearchBox = ({isOpen, onClick, additionalStyles, handleOnSearch}) => {
     return (
         <div style={divStyle}>
             <IconButton iconStyle={baseStyles.smallIcon} style={baseStyles.icon} onClick={() => onClick()}>
-                <SearchIcon />
+                
             </IconButton>
             <TextField name='search' style={textStyle} onChange={e => handleOnSearch(e)}/>
         </div>

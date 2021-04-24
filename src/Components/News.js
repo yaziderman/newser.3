@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import config from "../extra/config";
 import ApiHelper from "../extra/ApiHelper";
 import NewsCard from "./NewsCard";
-import ScrollUpButton from "react-scroll-up-button";
 import SearchBox from "../Ui/SearchBox";
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import injectTapEventPlugin from "react-tap-event-plugin";
 import makeExpanding from "../Ui/expanding-animation";
 
 const ExpandingSearchBox = makeExpanding(SearchBox);
@@ -27,7 +24,7 @@ class News extends Component {
   }
 
   componentDidMount() {
-    injectTapEventPlugin();
+    //injectTapEventPlugin();
   }
 
   fetchAllNewsByCategory(category) {
@@ -85,11 +82,9 @@ class News extends Component {
                 <a href="/" className="newserAction">
                   &#171;Categories
                 </a>
-                <MuiThemeProvider>
                   <div style={style}>
                     <ExpandingSearchBox handleOnSearch={this.handleOnSearch} />
                   </div>
-                </MuiThemeProvider>
               </h2>
             </div>
           </div>
@@ -112,7 +107,7 @@ class News extends Component {
               </div>
             ))
           )}
-          <ScrollUpButton style={scrollerStyle} />
+          {/* <ScrollUpButton style={scrollerStyle} */}
         </div>
       </div>
     );
